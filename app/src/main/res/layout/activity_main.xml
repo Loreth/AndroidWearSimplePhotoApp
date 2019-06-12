@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/dark_grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:deviceIds="wear"
+        android:padding="@dimen/box_inset_layout_padding">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/inner_frame_layout_padding"
+            app:boxedEdges="all">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:src="@drawable/pika1"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp" android:id="@+id/pika_image1"/>
+            <ImageView
+                    android:src="@drawable/pika2"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp" android:id="@+id/pika_image2"/>
+            <ImageView
+                    android:src="@drawable/pika3"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp" android:id="@+id/pika_image3"/>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>
